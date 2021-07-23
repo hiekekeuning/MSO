@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <circle cx="70" cy="125" r="25" stroke-width="1" fill="none" stroke="black" />
+    <polyline points="150,100 250,100 250,150 150,150 150,100"
+        style="fill:none;stroke:black;stroke-width:1" />
+    <polyline points="65,50 74,77 51,60 79,60 56,77 65,50"
+        style="fill:none;stroke:black;stroke-width:1" />
+</svg>

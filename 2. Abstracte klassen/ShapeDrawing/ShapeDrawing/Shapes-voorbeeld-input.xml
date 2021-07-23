@@ -1,0 +1,5 @@
+<shapes>
+    <circle x="45" y="100" size="50"/>
+    <rectangle x="150" y="100" height="50" width="100"/>
+    <star x="50" y="50" width="30" height="30"/>
+</shapes>
