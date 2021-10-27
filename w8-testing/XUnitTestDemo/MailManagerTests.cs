@@ -34,7 +34,7 @@ namespace XUnitTestDemo
         [InlineData("john@smith@company.com", false)]
         [InlineData("john", false)]
         [InlineData("", false)]
-        public void InValidMail(string email, bool isValid)
+        public void CheckMail(string email, bool isValid)
         {
             // Arrange
             MailManager mailManager = new();
