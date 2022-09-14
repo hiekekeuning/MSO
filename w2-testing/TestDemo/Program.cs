@@ -7,10 +7,5 @@ namespace TestDemo
         static void Main(string[] args)
         {
         }
-
-       public static int GetOne()
-       {
-            return 1;
-       }
     }
 }

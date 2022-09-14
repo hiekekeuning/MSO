@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace TestDemo
 {
-    /* Voorbeeldcode uit de clip over testing */ 
     public class BankAccount
     {
         public string CustomerName { get; }
@@ -23,11 +22,11 @@ namespace TestDemo
         {
             if (IsFrozen)
             {
-                throw new Exception("Account frozen"); // gooi hier liever een eigen exception! (FrozenAccountException o.i.d.)
+                throw new FrozenAccountException(); 
             }
             if (amount > Balance || amount < 0)
             {
-                throw new ArgumentOutOfRangeException("amount"); // kan ook beter
+                throw new ArgumentOutOfRangeException("amount"); // kan beter
             }
             Balance -= amount;
         }
@@ -35,7 +34,7 @@ namespace TestDemo
         {
             if (IsFrozen)
             {
-                throw new Exception("Account frozen");
+                throw new FrozenAccountException();
             }
             if (amount < 0)
             {
@@ -54,5 +53,10 @@ namespace TestDemo
             IsFrozen = false;
         }
 
+    }
+
+    public class FrozenAccountException : Exception
+    {
+        
     }
 }
