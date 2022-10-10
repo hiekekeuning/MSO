@@ -9,32 +9,27 @@ namespace CoffeeApp
     abstract class Beverage
     {
         public abstract string Make();
-        public abstract decimal Price();
+        public abstract decimal Price { get; }
     }
 
     class Coffee : Beverage
     {
-        public override string Make()
-        {
-            return "coffee";
-        }
+        public override string Make() => "coffee";
+        
 
-        public override decimal Price()
+        public override decimal Price
         {
-            return 2;
+            get => 2;
         }
     }
 
     class Decaf : Beverage
     {
-        public override string Make()
-        {
-            return "decaf";
-        }
+        public override string Make() => "decaf";
 
-        public override decimal Price()
+        public override decimal Price
         {
-            return 1.75m;
+            get => 1.75m;
         }
     }
 

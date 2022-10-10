@@ -1,7 +1,7 @@
 ﻿
 namespace CoffeeApp
 {
-    partial class Form1
+    partial class CoffeeUI
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace CoffeeApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CoffeeUI));
             this.baseBox = new System.Windows.Forms.ComboBox();
             this.milkBox = new System.Windows.Forms.CheckBox();
             this.syrupBox1 = new System.Windows.Forms.CheckBox();

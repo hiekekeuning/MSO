@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CoffeeApp
 {
-    public partial class Form1 : Form
+    public partial class CoffeeUI : Form
     {
-        public Form1()
+        public CoffeeUI()
         {
             InitializeComponent();
 
@@ -21,13 +21,12 @@ namespace CoffeeApp
 
         private void makeButton_Click(object sender, EventArgs e)
         {
-            Beverage order;
-            switch (baseBox.Text)
+            Beverage order = baseBox.Text switch
             {
-                case "coffee": order = new Coffee(); break;
-                case "decaf": order = new Decaf(); break;
-                default: throw new CoffeeAppException("unknown coffee type");
-            }
+                "coffee" => new Coffee(),
+                "decaf"  => new Decaf(),
+                _        => throw new CoffeeAppException("unknown coffee type"),
+            };
             if (milkBox.Checked)
             {
                 
@@ -45,11 +44,12 @@ namespace CoffeeApp
 
         private void cappucinoButton_Click(object sender, EventArgs e)
         {
+            throw new CoffeeAppException("don't know how to make cappucino yet");
         }
 
         private void showOrder(Beverage order)
         {
-            outBox.Text = order.Make() + Environment.NewLine + $"€ {order.Price()}";
+            outBox.Text = order.Make() + Environment.NewLine + $"€ {order.Price}";
        
         }
     }
