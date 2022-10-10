@@ -50,7 +50,6 @@ namespace CoffeeApp
         private void showOrder(Beverage order)
         {
             outBox.Text = order.Make() + Environment.NewLine + $"€ {order.Price}";
-       
         }
     }
 }
