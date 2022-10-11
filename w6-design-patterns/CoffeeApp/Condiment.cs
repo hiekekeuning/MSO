@@ -50,11 +50,11 @@ namespace CoffeeApp
         }
     }
 
-    public enum Syrup { Caramel, Chocolate, Hazelnut }
-    class SyrupDecorator : Condiment
+    public enum SyrupType { Caramel, Chocolate, Hazelnut }
+    class Syrup : Condiment
     {
-        private Syrup _syrupType;
-        public SyrupDecorator(Syrup type) : base()
+        private SyrupType _syrupType;
+        public Syrup(SyrupType type) : base()
         {
             _syrupType = type;
         }
