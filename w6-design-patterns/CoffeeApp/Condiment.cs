@@ -12,6 +12,9 @@ namespace CoffeeApp
         {
 
         }
+
+        public abstract string Make();
+        public abstract decimal Price();
     }
 
     class Milk : Condiment
@@ -22,12 +25,12 @@ namespace CoffeeApp
             Quantity = q;
         }
 
-        public string Make()
+        public override string Make()
         {
             return " + milk";
         }
 
-        public decimal Price()
+        public override decimal Price()
         {
             return 0.50m;
         }
@@ -39,12 +42,12 @@ namespace CoffeeApp
         {
 
         }
-        public string Make()
+        public override string Make()
         {
             return " + cacao";
         }
 
-        public decimal Price()
+        public override decimal Price()
         {
             return 0.25m;
         }
@@ -58,12 +61,12 @@ namespace CoffeeApp
         {
             _syrupType = type;
         }
-        public string Make()
+        public override string Make()
         {
             return $"{_syrupType} syrup ";
         }
 
-        public decimal Price()
+        public override decimal Price()
         {
             return 0.55m;
         }
