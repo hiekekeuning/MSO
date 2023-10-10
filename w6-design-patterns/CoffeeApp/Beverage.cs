@@ -16,7 +16,6 @@ namespace CoffeeApp
     {
         public override string Make() => "coffee";
         
-
         public override decimal Price
         {
             get => 2;
