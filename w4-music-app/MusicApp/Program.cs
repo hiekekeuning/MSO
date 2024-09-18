@@ -17,7 +17,7 @@ namespace MusicApp
             var p = new Playlist();
             p.AddSong(new Song("Crazy what love can do", new Artist("David Guetta"), Genre.Pop));
             p.AddSong(new Song("As it was", new Artist("Harry Styles"), Genre.Pop));
-            p.AddSong(new Song("Sonne", new Artist("Rammstein"), Genre.Metal));
+            p.AddSong(new Song("Nemo", new Artist("Nightwish"), Genre.Metal));
             p.AddSong(new Song("Words", new Artist("Alesso"), Genre.Dance));
             p.AddSong(new Song("Snap", new Artist("Rosa Linn"), Genre.Rock));
 
