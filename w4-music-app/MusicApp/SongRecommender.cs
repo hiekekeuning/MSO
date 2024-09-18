@@ -26,7 +26,8 @@ namespace MusicApp
         public Song SuggestWildcard(IList<Song> playlist)
         {
             var s = _lib.FindAll(s => s.Genre == playlist[0].Genre);
-            return SuggestRandom(s);
+            int randomIndex = new Random().Next(_lib.Count - 1);
+            return _lib[randomIndex];
         }
 
         public Song SuggestFromKnownArtist(IList<Song> playlist)
