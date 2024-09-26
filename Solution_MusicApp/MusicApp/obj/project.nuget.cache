@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EQlvOL1KUuhpB3Lbt5TqCDCQu9VTtg/gNcr5aUVG6cv3JMchlqHR/YkKdvbcxahjay73mYWios63CHiSlcxjoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\carne005\\OneDrive - Universiteit Utrecht\\Teaching\\2024-2025\\INFOMSO\\Werkcolleges\\Solution_MusicApp\\MusicApp\\MusicApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carne005\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\carne005\\.nuget\\packages\\spotifyapi.web\\6.3.0\\spotifyapi.web.6.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
