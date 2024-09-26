@@ -1,0 +1,46 @@
+﻿ public partial class CoffeeMachine : Form, IMyObserver<Order>
+    {
+        public CoffeeMachine()
+        {
+            InitializeComponent();
+        }
+        public void Notify(Order order)
+        {
+            if (order != null)
+            {
+                textBox1.Text += order.Beverage.Make() + Environment.NewLine;
+            }
+        }
+    }
+
+
+
+    public class Order: IMyObservable<Order>
+    {
+        private List<IMyObserver<Order>> _observers = new();
+
+        public void Make(Beverage beverage, bool discount = false)
+        {
+           ..
+            foreach (var n in _observers)
+            {
+                n.Notify(this);
+            }
+        }
+
+        public void Register(IMyObserver<Order> o)
+        {
+            _observers.Add(o);
+        }
+
+        public void UnRegister(IMyObserver<Order> o)
+        {
+            _observers.Remove(o);
+        }
+    }
+}
+
+FORM
+
+            _order.Register(_coffeeMachine);
+            _order.Register(this);
